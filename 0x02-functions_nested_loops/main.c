@@ -2,25 +2,22 @@
 #include <stdio.h>
 
 /**
- * main - Tests the _isalpha function
+ * main - Tests the print_sign function
  *
  * Return: 0 on success
  */
 int main(void)
 {
-char c;
+int result;
 
-c = 'A';
-printf("%c: %d\n", c, _isalpha(c)); // Should print 1
+result = print_sign(98);
+printf(" -> %d\n", result);
 
-c = 'z';
-printf("%c: %d\n", c, _isalpha(c)); // Should print 1
+result = print_sign(0);
+printf(" -> %d\n", result);
 
-c = '5';
-printf("%c: %d\n", c, _isalpha(c)); // Should print 0
-
-c = '@';
-printf("%c: %d\n", c, _isalpha(c)); // Should print 0
+result = print_sign(-5);
+printf(" -> %d\n", result);
 
 return (0);
 }
