@@ -2,17 +2,25 @@
 #include <stdio.h>
 
 /**
- * main - Tests the _islower function
+ * main - Tests the _isalpha function
  *
  * Return: 0 on success
  */
 int main(void)
 {
-char c1 = 'g';
-char c2 = 'G';
+char c;
 
-printf("%c: %d\n", c1, _islower(c1)); // Expected output: g: 1
-printf("%c: %d\n", c2, _islower(c2)); // Expected output: G: 0
+c = 'A';
+printf("%c: %d\n", c, _isalpha(c)); // Should print 1
+
+c = 'z';
+printf("%c: %d\n", c, _isalpha(c)); // Should print 1
+
+c = '5';
+printf("%c: %d\n", c, _isalpha(c)); // Should print 0
+
+c = '@';
+printf("%c: %d\n", c, _isalpha(c)); // Should print 0
 
 return (0);
 }
