@@ -1,14 +1,20 @@
 #include "main.h"
-
 /**
- * print_alphabet - Prints the lowercase alphabet followed by a new line
- */
+  * print_alphabet - The entry point of the function
+  * @void: The function takes no parameters
+  *
+  * Description:  This function prints the alphabet, in lowercase,
+  * followed by a new line. You can only use _putchar twice in your code.
+  */
+
 void print_alphabet(void)
 {
-char alphabet[] = "abcdefghijklmnopqrstuvwxyz\n";
-_putchar(alphabet[0]);  /* Print the first character */
+char alpha = 'a';
 
-/* Print the rest of the string using a single _putchar call */
-_putchar(*(alphabet + 1));
+do {
+_putchar(alpha);
+alpha++;
+} while (alpha <= 'z');
+_putchar('\n');
 }
 
