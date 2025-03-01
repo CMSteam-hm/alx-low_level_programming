@@ -1,21 +1,20 @@
 #include <stdio.h>
-#include "main.h"
 
 /**
  * print_fibonacci - Prints the first 50 Fibonacci numbers
- *                  starting from 1 and 2
+ * starting from 1 and 2, separated by ", "
  */
 void print_fibonacci(void)
 {
-int count;
-unsigned long a = 1, b = 2, next;
+long int a = 1, b = 2, next;
+int i;
 
-printf("%lu, %lu", a, b);
+printf("%ld, %ld", a, b);
 
-for (count = 2; count < 50; count++)
+for (i = 3; i <= 50; i++)
 {
 next = a + b;
-printf(", %lu", next);
+printf(", %ld", next);
 a = b;
 b = next;
 }
