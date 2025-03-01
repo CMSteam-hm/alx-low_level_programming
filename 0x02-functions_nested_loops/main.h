@@ -2,7 +2,8 @@
 #define MAIN_H
 
 int _putchar(char c);
-void print_times_table(int n);
+int sum_multiples_3_5(void);
 
 #endif /* MAIN_H */
+
 

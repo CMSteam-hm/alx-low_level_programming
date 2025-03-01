@@ -1,17 +1,18 @@
 #include "main.h"
+#include <stdio.h>
 
 /**
- * main - Entry point, tests the print_times_table function
+ * main - Entry point, prints the sum of multiples of 3 or 5 below 1024
  *
  * Return: 0 on success
  */
 int main(void)
 {
-print_times_table(3); /* Example: printing 3 times table */
-_putchar('\n');
-print_times_table(15); /* Printing 15 times table */
-_putchar('\n');
-print_times_table(-1); /* Should print nothing */
+int result;
+
+result = sum_multiples_3_5();
+printf("%d\n", result);
+
 return (0);
 }
 
