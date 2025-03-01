@@ -9,7 +9,6 @@ void print_fibonacci(void)
 long int a = 1, b = 2, next;
 int i;
 
-    
 printf("%ld, %ld", a, b);
 
 for (i = 3; i <= 50; i++)
