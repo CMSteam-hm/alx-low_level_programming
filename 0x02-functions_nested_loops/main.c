@@ -2,23 +2,24 @@
 #include <stdio.h>
 
 /**
- * main - Tests the print_sign function
+ * main - Tests the print_last_digit function
  *
  * Return: 0 on success
  */
 int main(void)
 {
-int result;
+int r;
 
-result = print_sign(98);
-printf(" -> %d\n", result);
+r = print_last_digit(98);
+printf(": %d\n", r);
 
-result = print_sign(0);
-printf(" -> %d\n", result);
+r = print_last_digit(-1234);
+printf(": %d\n", r);
 
-result = print_sign(-5);
-printf(" -> %d\n", result);
+r = print_last_digit(0);
+printf(": %d\n", r);
 
 return (0);
 }
+
 
