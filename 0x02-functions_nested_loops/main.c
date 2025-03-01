@@ -1,13 +1,13 @@
 #include "main.h"
 
 /**
- * main - Entry point, calls jack_bauer function
+ * main - Entry point, calls times_table function
  *
  * Return: 0 on success
  */
 int main(void)
 {
-jack_bauer();
+times_table();
 return (0);
 }
 
